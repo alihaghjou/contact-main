@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --green200: rgb(223, 241, 231),
+    --green600: hsl(169, 82%, 27%),
+    --red: hsl(0, 66%, 54%),
+    --grey500: hsl(186, 15%, 59%),
+    --grey900: hsl(187, 24%, 22%)
+}
+
+body {
+    @apply min-h-screen bg-green-200 text-base relative
+}
+
+.main {
+    @apply bg-white p-6 rounded-lg flex flex-col gap-4 absolute top-1/2 -translate-y-1/2 right-1/2 translate-x-1/2
+}
+
+.inputSection {
+    @apply flex flex-col gap-3
+}
+
+.input {
+    @apply border p-2 rounded border-gray-500 shadow-sm
+}
+
+.input:hover {
+    @apply border-gray-900
+}
+
+.radioinputSection {
+    @apply flex items-center gap-3 pl-6
+}
